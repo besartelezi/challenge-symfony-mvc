@@ -34,6 +34,10 @@ In the Symfony documentation, they have a lil' guid there on how to create a pag
 I will be following along those steps in order to understand how Symfony works a bit better.
 Once that's done, I will **DEMOLISH** the task given to us by the coaches with my newfound Symfony Powers!!
 
+I do want to say that the Symfony documentation is one of, if not the best, documentation I ever had the honour of laying my eyes on!
+So making that documentation even easier to understand is damn near impossible!
+Nonetheless, I will keep writing everything in my own words 'cuz that's just how I be learning cuz.
+
 ### Creating a page: Route and Controller
 I started out by creating a "Controller" class with a "controller" method inside of it.
 This was placed in the <code>src/controller</code> folder.
@@ -61,6 +65,40 @@ Then you can use the variables in the template, which will result in some fun, i
 
 The twig file will be the template that we will be rendering.
 The template will just be the HTML file of the webpage, and the render function is what will make the HTML file actually visible.
+
+### Independent Reading Time
+With the lucky number task out of the way, it's time to start some good ol' reading.
+And like I mentioned earlier, the Symfony documentation is very heckin' well written, so this will be fun!
+So fun in fact, I even made a meme about it.
+
+![independent-reading-time](readme-images/independent-reading-time.png)
+
+#### Independent Reading Time: Routes
+
+
+---
+
+## Symfony Project Structure
+Here I will be writing how the structure of a Symfony project actually looks and works like.
+
+* <code>config/</code>
+  * Here is where all the configuration is. This is the place we need to be when **configuring routes, services and packages**
+* <code>src/</code>
+  * PHP Code extravaganza, if it's PHP, Put (it) Here Pal!
+* <code>templates/</code>
+  * You can call this place a tree, 'cus I see nothin' but **twigs** around here! This is where all the twig templates need to be.
+
+These were the most important directories, since that's where we'll be mainly working.
+But, there are other directories as well!
+
+* <code>bin/</code>
+  * Our Lord and Saviour the <code>bin/console</code> lives here (including some other executable files, but they aren't that important).
+* <code>var/</code>
+  * Automatically-created files are stored here (<code>var/cache</code>) and logs (<code>var/log</code>).
+* <code>vendor/</code>
+  * Third-party libraries live here (stuff that's downloaded through Composer).
+* <code>public/</code>
+  * The document root for the project, all **publicly** accessible files need to be put here, like funny memes, or even more funny memes (and don't forget my personal favourite, some funny memes).
 
 ---
 
