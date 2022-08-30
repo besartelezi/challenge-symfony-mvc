@@ -42,6 +42,26 @@ So I created a route in the <code>routes/</code> folder.
 
 This was easy enough, because I have been made a bit familiar with routes thanks to an assignment we made before this one in React.
 
+### Annotation Routes
+Now I added an annotation route to the controller.
+Instead of using a <code>routes.yaml</code>, we can use the annotation route.
+It's basically just a different way of defining the route.
+This is more clear and more easily customizable in my opinion.
+
+### Rendering a template
+Among all the steps, this one was the most complicated one.
+But I'll try to explain it in my own words as good as possible. 
+
+The first step was to require twig, and to then rewrite <code>class LuckyController</code> to this: <code>class LuckyController extends AbstractController</code>.
+Because of this change, we can now access a lot of methods from the AbstractController class, including, the <code>$this->render()</code> method, the method we will be using.
+
+We can also pass variables from the controller to the twig file we will make.
+These however, do need to be defined in the controller.
+Then you can use the variables in the template, which will result in some fun, interactive webpages!
+
+The twig file will be the template that we will be rendering.
+The template will just be the HTML file of the webpage, and the render function is what will make the HTML file actually visible.
+
 ---
 
 ## Symfony Terminology
