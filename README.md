@@ -74,7 +74,29 @@ So fun in fact, I even made a meme about it.
 ![independent-reading-time](readme-images/independent-reading-time.png)
 
 #### Independent Reading Time: Routes
+Parameters:
+```
+In Symfony routes, variable parts are wrapped in { ... } and they must have a unique name. 
+For example, the route to display the blog post contents is defined as /blog/{slug}:
+```
+Parameters validation :
 
+When two pages have a similar route, with only the route parameter being different, how will it differentiate between the two?
+So for example: <code>/blog/{slug}</code> and <code>/blog/{page}</code>
+Well it won't, it will select the first one it reads!
+To fix this, is where parameter validation comes in.
+You need to add a <code>requirements</code> option, and then add some syntax in that option in order to differentiate between the routes.
+
+Once there are multiple parameters to a route, that base route won't work anymore, unless you define it again.
+You need to add a default value for the <code>{page}</code> parameter.
+
+There's something called a 'priority parameter'.
+You can define it and give it a numeric value, giving it priority over other parameters.
+
+#### Independent Writing Time has been Cancelled
+At this point, I realized that writing quick summaries of the documentation will be more negative than positive for me.
+As much as I like writing, it will be too time-consuming.
+So I'll keep on reading, and then just tackle any issues as they come.
 
 ---
 
