@@ -4,3 +4,7 @@
 app_lucky_number:
   path: /lucky/number
   controller: App\Controller\LuckyController::number
+
+app_learning:
+  path: /about-me
+  controller: App\Controller\LearningController
